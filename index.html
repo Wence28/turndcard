@@ -10,8 +10,18 @@ function f2() {
  alert("Wrong answer!!!");}
 </script>
 <style>
-body { background : url(https://mcdn.wallpapersafari.com/medium/65/53/R9U80N.jpeg);
--webkit-background-size:cover;-o-background-size:cover; background-size: cover; background-repeat: no-repeat; }
+ body::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: fixed;
+  background-image: url(https://mcdn.wallpapersafari.com/medium/65/53/R9U80N.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
 p {font-family :Calibri;
 color :Yellow; font-size:25pt; }
 </style>

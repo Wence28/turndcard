@@ -4,47 +4,46 @@
 <meta charset="utf-8" />
 <title>Turndcard</title>
 <script type="text/javascript">
+var c = 0;
 function f1() {
- alert("Congrats!!! Right answer");}
+c++;
+document.getElementById("myImg4").removeAttribute("onclick");
+if (c==2){ 
+ alert("Congrats!!! Right answer");}}
  function f2() {
- alert("Wrong answer!!!");}
- </script>
+c++;
+document.getElementById("myImg2").removeAttribute("onclick");
+if (c==2){ 
+ alert("Congrats!!! Right answer");}}
+ function f3() {
+ alert("Oops! Wrong answer.");}
+</script>
 <style>
- body::before{
-  content: '';
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  position: fixed;
-  background-image: url(https://mcdn.wallpapersafari.com/medium/65/53/R9U80N.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
- }
+body { background : url(https://i.imgur.com/0IGkpsC.jpg);
+background-size: 100% 100%; }
 p {font-family :Calibri;
 color :Yellow; font-size:25pt; }
 </style>
 </head>
-<body><center>
-<img src ="IMG\scroll edit.png" width="650" height="450">
+ <body><center>
+<img src ="IMG\edited 1.png" width="650" height="550">
 </center>
 <p>You are shown a set of four cards placed on a table, each of which has a number on one side and a colored patch on the other side.<br> 
 The visible faces of the cards show 5, 4, silver and copper.
-Which card must you turn over in order to test the truth of the proposition that if a card shows an even number on one face, then its opposite face is silver ?<p/>
+Which card(s) must you turn over in order to test the truth of the proposition that if a card shows an even number on one face, then its opposite face is silver ?<p/>
 <center>
 <div class = "aligncenter is-resized" style = "width:100%">
 <div style = "display: inline-block">
-<img id = "myImg0" src="IMG\5.jpg" width="100" height = "150" onclick="f2()"><br><br><br> 
+<img id = "myImg0" src="IMG\5.jpg" width="100" height = "150" onclick="f3()"><br><br><br> 
 </div>
 <div id = "petal-die" style = "display: inline-block">
-<img id = "myImg3" src="IMG\4.jpg" width="100" height = "150" onclick="f2()"><br><br><br>
+<img id = "myImg4" src="IMG\4.jpg" width="100" height = "150" onclick="f1()"><br><br><br>
 </div>
 <div id = "petal-die" style = "display: inline-block">
-<img id = "myImg1" src="IMG\Steampunk Silver.jpg" width="100" height = "150" onclick="f2()"><br><br><br>
+<img id = "myImg1" src="IMG\Steampunk Silver.jpg" width="100" height = "150" onclick="f3()"><br><br><br>
 </div>
 <div id = "petal-die" style = "display: inline-block">
-<img id = "myImg2" src="IMG\Steampunk.jpg" width="100" height = "150" onclick="f1()"><br><br><br>
+<img id = "myImg2" src="IMG\Steampunk.jpg" width="100" height = "150" onclick="f2()"><br><br><br>
 </div>
 </body>
 </center>
